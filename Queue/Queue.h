@@ -6,6 +6,7 @@ using namespace std;
 
 class Queue
 {
+protected:
 	int* queue = nullptr;
 
 	int maxLength = 0;

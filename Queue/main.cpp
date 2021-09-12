@@ -1,4 +1,6 @@
 #include "Queue.h"
+#include "RingQueue.h"
+
 #include<ctime>
 
 int main()
@@ -7,7 +9,7 @@ int main()
 
 	//create queue with max lenght 25 elem
 
-	Queue QU(25);
+	RingQueue QU(25);
 
 	//fill part of queue
 
