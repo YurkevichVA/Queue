@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PriorityQueue.cpp" />
     <ClCompile Include="RingQueue.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Queue.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PriorityQueue.h" />
     <ClInclude Include="RingQueue.h" />
     <ClInclude Include="Queue.h" />
   </ItemGroup>
