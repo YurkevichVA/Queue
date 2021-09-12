@@ -4,9 +4,17 @@
 
 class PriorityQueue:public Queue
 {
-	int* priority;
+	int* priority = nullptr;
 public:
-	//ctor
+	// ctor
 	PriorityQueue(int m);
+	// dctor
+	~PriorityQueue();
+	// print queue
+	void printQueue()const;
+	// add elem to queue
+	void addElem(int elem, int pri);
+	// extract elem
+	int extractElem();
 };
 

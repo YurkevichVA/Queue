@@ -1,33 +1,38 @@
 #include "Queue.h"
 #include "RingQueue.h"
+#include "PriorityQueue.h"
 
-#include<ctime>
+#include <ctime>
 
 int main()
 {
 	srand(time(0));
 
-	//create queue with max lenght 25 elem
+	PriorityQueue QUP(25);
 
-	RingQueue QU(25);
+	// fill part of queue
 
-	//fill part of queue
+	for (int i = 0; i < 5; i++) 
+	{
 
-	for (int i = 0; i < 5; i++) {
-		QU.addElem(rand() % 50);
+		// for elements from 0 to 99 (including)
+		// for priority from 0 to 11 (including)
+
+		QUP.addElem(rand() % 100, rand() % 12);
 	}
+	// print queue
 
-	//print queue
+	QUP.printQueue();
 
-	QU.printQueue();
+	// extraxt elem
 
 	cout << endl;
 
-	//extracting elem
+	cout << QUP.extractElem();
 
-	cout << QU.extractElem() << endl << endl;
+	cout << endl << endl;
 
-	//print queue
+	// printQueue
 
-	QU.printQueue();
+	QUP.printQueue();
 }

@@ -5,11 +5,6 @@ RingQueue::RingQueue(int m):Queue(m)
 
 }
 
-RingQueue::~RingQueue()
-{
-	if (queue != nullptr)delete[] queue;
-}
-
 int RingQueue::extractElem()
 {
 	if (!isEmpty())
